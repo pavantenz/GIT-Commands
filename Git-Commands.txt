@@ -1,0 +1,65 @@
+$ git log
+$ git clone
+$ git diff commitid1 commitid2
+$ git checkout commitid
+$ git status
+
+
+$ git init // initializes a dirrectory by creating .git file
+$ ls -a // to view hidden files such as .git
+$ git status // gives you the current status of git repo
+
+
+
+$ git add helloworld.txt // Adds to the staging area
+$ git status // See files that are in the staging area
+$ git commit -m "My first commit"
+$ git log
+
+$ git diff // Compares staging area with working dir files
+$ git diff --staged // Compares recent commit with staged files
+$ git diff commitid1 commitid2 // Compares two different commits
+
+
+$ git branch // lists all the branches
+$ git branch easy-mode // Creates a new easy mode branch
+$ git checkout easy-mode // Checks out easy-mode branch
+
+$ git log --graph --oneline master coins // Check out the commits of master and coins branches and compare both of them
+
+$ git checkout -b branchname
+The above is equivalent to 
+$ git branch branchname
+$ git checkout branchname
+
+
+$ git merge master coins // Merge coins branch into master
+$ git show commitid // Show the difference between the commid id and its parent
+
+$ git branch -d coins // deletes the coins branch i.e deletes the lable coins but the commits are always in tact
+
+$ git log -n 1 // Displays only the last commit
+
+
+// Commands for github or remote repo
+
+$ git remote // List of all remotes 
+$ git remote -v // List of all remote names and their pointers
+$ git remote add origin https://github.com/psajja/reflections.git // Create a remote repo named origin and is at the link https://....
+
+$ git push origin master // send all the reacheable commit of the master branch to the remote origin
+
+$ git pull origin master // To pull Changes made to the remote and add them to the local repo
+
+$ git clone https://github.com/psajja/recipes.git // To Clone a repo on github
+// Just as a side note, this will contain a remote "origin" pointing to git location for pushing changes after you made to the clone
+
+
+$ git pull origin master = git fetch origin master + git merge master orgin/master
+
+$ git fetch origin // if local repo has some changes and remote has some changes, theyn fetch will add remote changes to the local when it was last pulled by creating a branch
+
+
+
+
+
