@@ -64,3 +64,5 @@ $ git fetch origin // if local repo has some changes and remote has some changes
 
 - fetch will updated orgin/master to the new master on github
 
+- fork : Clone to your account on github
+
